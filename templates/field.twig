@@ -1,0 +1,14 @@
+<input class="text fullwidth c-readonly__field u-no-focus" name="{{ name }}" value="{{ value }}" placeholder="{{ name }}" autocomplete="off" readonly>
+
+{% set css %}
+	.c-readonly__field {
+		background-color: #fcfcfc;
+	}
+	.u-no-focus:focus {
+		border: 1px solid #e3e5e8;
+		box-shadow: none;
+		outline: none;
+	}
+{% endset %}
+
+{% includeCss(css) %}
